@@ -1,3 +1,3 @@
 Write-Host "Hello World!"
 
-New-Item C:\Temp\Testtest.txt
+New-Item Test.txt
