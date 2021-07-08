@@ -5,6 +5,6 @@ Describe "Module testing!" {
     }
 
     It "should return Hello World!" {
-        . $PSScriptRoot\test.ps1 | Should -Be "Hello World!"
+        . $PSScriptRoot\..\test.ps1 | Should -Be "Hello World! What will happen now ?"
     }
 }
