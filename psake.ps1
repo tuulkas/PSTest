@@ -3,7 +3,7 @@ task Build -depends Init, Test {
 }
 
 task Test -depends Init {
-    Invoke-Pester -Path $PSScriptRoot\Tests
+    Invoke-Pester -Path $PSScriptRoot\Tests -OutputFile $PSScriptRoot\Tests\Nunit.xml -OutputFormat NUnitXml
 }
 
 task Init {
