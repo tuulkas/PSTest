@@ -1,4 +1,4 @@
-if (!(Get-Module -Name psake -ListAvailable)) { Install-Module -Name psake -Scope CurrentUser }
+if (!(Get-Module -Name psake -ListAvailable)) { Install-Module -Name psake -Scope CurrentUser -Force -Confirm:$false }
 
 Invoke-psake -buildFile "$PSScriptRoot\psake.ps1" -taskList Build
 
