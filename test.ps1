@@ -1,1 +1,1 @@
-Write-Host "Hello World, I have upgraded!!"
+Write-Output "Hello World!"
