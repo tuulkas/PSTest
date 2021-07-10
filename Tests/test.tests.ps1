@@ -12,8 +12,8 @@ Describe "Module testing!" {
         $items = Get-Childitem -Path $PSScriptRoot\..\functions\* -Include *.ps1
         foreach ($item in $items)
         {
-            It -Name "$($item.name) should follow coding standards and dont have any errors" {
-                Invoke-ScriptAnalyzer -Path $item.FullName | Should -BeNullOrEmpty
+            It -Name "$($item.name) should follow coding standards and dont have any errors" -TestCases @{Item = $item.FullName}{
+                Invoke-ScriptAnalyzer -Path $item | Should -BeNullOrEmpty
             }
 
         }
