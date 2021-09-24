@@ -1,7 +1,6 @@
-build_cloud: Test
-image: 
-- Test
-- Visual Studio 2017
+build_cloud: Docker
+image: Windows
+
 
 test_script:
 - ps: Write-Host "Hello World!"
