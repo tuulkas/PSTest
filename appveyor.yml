@@ -1,4 +1,2 @@
-image: Ubuntu
-
 test_script:
 - ps: Write-Host "Hello World!"
