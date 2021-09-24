@@ -1,0 +1,7 @@
+image: Windows
+
+init:
+- ps: $my_variable = 'Test value'
+
+test_script:
+- ps: Write-Host "This is $my_variable"
