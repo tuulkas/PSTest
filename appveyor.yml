@@ -1,5 +1,7 @@
 build_cloud: Docker
-image: Windows
+image: 
+- Windows
+- Visual Studio 2017
 
 
 test_script:
