@@ -1,3 +1,8 @@
 build_cloud: Test
-image: Test
+image: 
+- Test
+- Visual Studio 2017
+
+test_script:
+- ps: Write-Host "Hello World!"
 
