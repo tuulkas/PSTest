@@ -1,4 +1,3 @@
-image: Process
+build_cloud: Test
+image: Test
 
-test_script:
-- ps: Write-Host "Hello World!"
